@@ -118,3 +118,83 @@ footer {
     padding: 1rem;
 }
 
+:root {
+  --azul: #1a2447;
+  --fundo: #f3f3f3;
+  --texto: #333;
+  --destaque: #2f7d6b;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: var(--fundo);
+  color: var(--texto);
+  line-height: 1.6;
+  margin: 0;
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+}
+
+h1, h2, h3 {
+  font-family: Georgia, serif;
+  color: var(--azul);
+}
+
+/* card de cada projeto */
+.projeto {
+  background: #fff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.projeto:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+.projeto img {
+  width: 100%;
+  height: auto;
+  border: 2px solid var(--azul);
+  border-radius: 8px;
+  margin: 1rem 0;
+}
+
+/* etiqueta "em construção" */
+.badge {
+  display: inline-block;
+  font-size: 0.75rem;
+  background: #ffe9a8;
+  color: #6b5200;
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+  vertical-align: middle;
+}
+
+/* link como botão */
+.botao {
+  display: inline-block;
+  background: var(--azul);
+  color: #fff;
+  text-decoration: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  transition: background 0.2s;
+}
+
+.botao:hover {
+  background: var(--destaque);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
